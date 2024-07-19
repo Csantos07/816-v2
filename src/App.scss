@@ -4,9 +4,25 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #659f85;
+}
+
+html,
+body {
+  overflow: -moz-scrollbars-none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
+  overflow: hidden;
 }

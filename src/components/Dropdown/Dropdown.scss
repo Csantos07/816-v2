@@ -1,21 +1,18 @@
 .dropdown {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: #2f6b50ca;
-
-  // New
   position: absolute;
   top: -110%;
   left: 0;
   right: 0;
   height: 100%;
-
+  background-color: #5a9279;
+  display: flex;
+  flex-direction: column;
   transition: top 0.5s ease-in-out;
+  padding-top: 5vh;
 
   &--link {
     padding: 2rem 2rem;
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: white;
   }
 

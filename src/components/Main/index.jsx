@@ -4,6 +4,7 @@ import Dropdown from "../Dropdown";
 import FillerContent from "../FillerContent";
 import HeroSection from "./HeroSection";
 import Philosophy from "./Philosophy";
+import Provider from "./Provider";
 
 const Main = ({ dropdownVisible }) => {
   return (
@@ -15,6 +16,7 @@ const Main = ({ dropdownVisible }) => {
           {/* Other components go here */}
           <HeroSection />
           <Philosophy />
+          <Provider />
           {/* <FillerContent />
           <FillerContent />
           <FillerContent />

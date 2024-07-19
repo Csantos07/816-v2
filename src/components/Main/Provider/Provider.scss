@@ -1,0 +1,66 @@
+.provider .desktop {
+  display: none;
+}
+.provider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  background: url("../../../../public/400pxs.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.provider h1 {
+  color: #659f85;
+  margin-top: 5vh;
+  align-self: self-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.provider img {
+  margin-top: 20px;
+}
+
+.provider p {
+  margin-top: 1rem;
+  align-self: start;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.provider-left-container {
+}
+
+.provider-right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.provider .call-to-action {
+  background-color: #659f85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 20px 0 70px;
+  width: fit-content;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.provider a {
+  text-decoration: none;
+  color: white;
+}

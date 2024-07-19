@@ -5,9 +5,18 @@ const Dropdown = ({ dropdownVisible }) => {
   return (
     <>
       <section className={`dropdown ${dropdownVisible ? "visible" : ""}`}>
-        <span className="dropdown--link">Home</span>
-        <span className="dropdown--link">Philosophy</span>
-        <span className="dropdown--link">Provider</span>
+        <a href="#home" className="dropdown--link">
+          Home
+        </a>
+        <a href="#philosophy" className="dropdown--link">
+          Philosophy
+        </a>
+        <a href="#provider" className="dropdown--link">
+          Provider
+        </a>
+        <a href="#" className="dropdown--link">
+          Book A Call
+        </a>
       </section>
     </>
   );

@@ -4,7 +4,7 @@ import "./Provider.scss";
 
 const Provider = () => {
   return (
-    <div className="provider">
+    <div className="provider" id="provider">
       <div className="provider-left-container">
         <h1 className="mobile">Your Provider</h1>
 

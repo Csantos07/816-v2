@@ -3,7 +3,7 @@ import "./HeroSection.scss";
 
 const HeroSection = () => {
   return (
-    <div className="hero-container">
+    <div className="hero-container" id="home">
       <img className="splash-img" src="/splash.svg" alt="" />
       <a
         href="https://816rehabandperformance.janeapp.com/#/staff_member/1/bio"

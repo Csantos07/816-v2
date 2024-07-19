@@ -11,16 +11,11 @@ const Main = ({ dropdownVisible }) => {
     <>
       <main className={`main ${dropdownVisible ? "dropdown-visible" : ""}`}>
         <Dropdown dropdownVisible={dropdownVisible} />
-        {/* <div className={`main__content ${dropdownVisible ? "hidden" : ""}`}> */}
+
         <div className={"main__content"}>
-          {/* Other components go here */}
           <HeroSection />
           <Philosophy />
           <Provider />
-          {/* <FillerContent />
-          <FillerContent />
-          <FillerContent />
-          <FillerContent /> */}
         </div>
       </main>
     </>

@@ -1,8 +1,8 @@
-import './App.scss';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Main from './components/Main';
-import { useState } from 'react';
+import "./App.scss";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
+import { useState } from "react";
 
 function App() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header onToggle={toggleDropdown} />
       <Main dropdownVisible={dropdownVisible} />
-      < Footer />
+      <Footer dropdownVisible={dropdownVisible} />
     </div>
   );
 }

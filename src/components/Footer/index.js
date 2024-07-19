@@ -1,8 +1,8 @@
 import './Footer.scss';
 
-const Footer = () => {
+const Footer = ({ dropdownVisible }) => {
   return (
-    <footer className="footer">
+    <footer className={`footer ${dropdownVisible ? "dropdown-visible" : ""}`}>
       <img src="/no-date.svg" alt="" />
     </footer>
   );

@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   color: black;
+  // New
+  position: relative;
+  margin-top: 7vh;
+  z-index: 50;
 
   &__content.hidden {
     display: none;

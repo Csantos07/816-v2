@@ -2,16 +2,24 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   background-color: #2f6b50ca;
-  padding-top: 12vh;
+
+  // New
+  position: absolute;
+  top: -110%;
+  left: 0;
+  right: 0;
+  height: 100%;
+
+  transition: top 0.5s ease-in-out;
+
   &--link {
     padding: 2rem 2rem;
     font-size: 5rem;
     color: white;
   }
-}
 
-.dropdown.hidden {
-  display: none;
+  &.visible {
+    top: 0;
+  }
 }

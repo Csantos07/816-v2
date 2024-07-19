@@ -14,7 +14,7 @@
     font-weight: 300;
     color: #659f85;
     span {
-      letter-spacing: -5.5px;
+      letter-spacing: -0.34375rem; /* Assuming the base font size is 16px */
       color: #000000;
       font-weight: 700;
     }
@@ -25,9 +25,9 @@
     margin-top: 1rem;
     padding: 0 3rem;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* Assuming the base font size is 16px */
   }
   p {
-    margin: 0 30px 30px 30px;
+    margin: 0 1.875rem 1.875rem 1.875rem; /* 30px / 16px base font size */
   }
 }

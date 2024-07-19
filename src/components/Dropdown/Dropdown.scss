@@ -10,9 +10,14 @@
   transition: top 0.5s ease-in-out;
   padding-top: 5vh;
 
-  &--link {
+  a {
+    text-decoration: none;
+    color: white;
     padding: 2rem 2rem;
-    font-size: 4.5rem;
+  }
+
+  &--link {
+    font-size: 3rem;
     color: white;
   }
 

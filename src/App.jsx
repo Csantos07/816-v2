@@ -11,7 +11,9 @@ function App() {
 
   const toggleDropdown = () => {
     setShrinkMain(!shrinkMain);
-    setDropdownVisible(!dropdownVisible);
+    setTimeout(() => {
+      setDropdownVisible(!dropdownVisible);
+    }, 500);
   };
 
   const handleLinkClick = (e) => {

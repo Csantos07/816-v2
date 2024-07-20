@@ -6,24 +6,16 @@
   margin-top: 7vh;
   z-index: 50;
 
-  // &__content.hidden {
-  //   display: none;
-  // }
-
-  &.dropdown-visible {
+  &.dropdown-visible .main__content {
     height: 0;
-    // opacity: 0;
+    opacity: 0;
+    overflow: hidden; // Added to ensure the content is hidden
   }
 
   .main__content {
     flex-grow: 1;
     overflow: auto;
-    transition: opacity 1.5s ease, height 5.5s ease;
+    transition: opacity 1.5s ease, height 0.5s ease;
     height: 100%;
-  }
-
-  &.dropdown-visible .main__content {
-    height: 0;
-    opacity: 0;
   }
 }

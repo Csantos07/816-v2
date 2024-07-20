@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding: 0 1.25rem;
-  transition: transform 0.5s ease;
+  padding: 0 1.25rem;
+  transition: transform 0.1s;
 
   & img {
     width: 30vw;

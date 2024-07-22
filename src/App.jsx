@@ -27,7 +27,7 @@ function App() {
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - 50; // Adjust 50px higher
+        const offsetPosition = elementPosition + window.scrollY; // Adjust 50px higher
 
         window.scrollTo({
           top: offsetPosition,

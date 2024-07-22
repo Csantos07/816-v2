@@ -27,7 +27,7 @@ function App() {
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY; // Adjust 50px higher
+        const offsetPosition = elementPosition + window.scrollY - 50; // Adjust 50px higher
 
         window.scrollTo({
           top: offsetPosition,
@@ -44,11 +44,12 @@ function App() {
   return (
     <div className="App">
       <Header onToggle={toggleDropdown} />
-      <Dropdown
+
+      <Main
+        shrinkMain={shrinkMain}
         dropdownVisible={dropdownVisible}
-        onLinkClick={handleLinkClick}
+        handleLinkClick={handleLinkClick}
       />
-      <Main shrinkMain={shrinkMain} />
       <Footer dropdownVisible={dropdownVisible} />
     </div>
   );

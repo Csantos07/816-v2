@@ -1,17 +1,14 @@
 import React from "react";
 import "./Main.scss";
-import Dropdown from "../Dropdown";
 import FillerContent from "../FillerContent";
 import HeroSection from "./HeroSection";
 import Philosophy from "./Philosophy";
 import Provider from "./Provider";
 
-const Main = ({ dropdownVisible }) => {
+const Main = ({ shrinkMain }) => {
   return (
     <>
-      <main className={`main ${dropdownVisible ? "dropdown-visible" : ""}`}>
-        <Dropdown dropdownVisible={dropdownVisible} />
-
+      <main className={`main ${shrinkMain ? "dropdown-visible" : ""}`}>
         <div className={"main__content"}>
           <HeroSection />
           <Philosophy />

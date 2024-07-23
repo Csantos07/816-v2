@@ -5,21 +5,24 @@
   position: relative;
   margin-top: 7vh;
   z-index: 50;
+  transition: height 5.5s ease; // Smooth transition for height
   border: 3px solid red;
 
   &.dropdown-visible {
-    height: 0;
+    // height: 0; // Shrink height when dropdown is visible
+    flex-grow: 0;
   }
 
   .main__content {
     flex-grow: 1;
     overflow: auto;
-    transition: opacity 1.5s ease, height 1.5s ease;
-    height: 100%;
-  }
+    transition: opacity 0.5s ease, height 15.5s ease; // Smooth transition for opacity and height
+    // height: 100%;
+    border: 2px solid rgb(255, 0, 251);
 
-  &.dropdown-visible .main__content {
-    height: 0;
-    // opacity: 0;
+    &.dropdown-visible {
+      flex-grow: 0;
+      // height: 0;
+    }
   }
 }

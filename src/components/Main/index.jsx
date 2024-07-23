@@ -14,7 +14,9 @@ const Main = ({ shrinkMain, dropdownVisible, handleLinkClick }) => {
           dropdownVisible={dropdownVisible}
           onLinkClick={handleLinkClick}
         />
-        <div className={"main__content"}>
+        <div
+          className={`main__content ${shrinkMain ? "dropdown-visible" : ""}`}
+        >
           <HeroSection />
           <Philosophy />
           <Provider />

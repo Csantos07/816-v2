@@ -2,8 +2,6 @@ import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
-import Dropdown from "./components/Dropdown";
-
 import { useState } from "react";
 
 function App() {
@@ -11,10 +9,10 @@ function App() {
   const [shrinkMain, setShrinkMain] = useState(false);
 
   const toggleDropdown = () => {
-    setShrinkMain(!shrinkMain);
+    setShrinkMain(!shrinkMain); // Consider reversing the order
     setTimeout(() => {
       setDropdownVisible(!dropdownVisible);
-    }, 300);
+    }, 1000);
   };
 
   const handleLinkClick = (e) => {

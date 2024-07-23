@@ -5,11 +5,7 @@ const Dropdown = ({ dropdownVisible, onLinkClick }) => {
   return (
     <>
       <section className={`dropdown ${dropdownVisible ? "visible" : ""}`}>
-        <a
-          href="https://www.google.com/"
-          className="dropdown--link"
-          onClick={onLinkClick}
-        >
+        <a href="#home" className="dropdown--link" onClick={onLinkClick}>
           Home
         </a>
         <a href="#philosophy" className="dropdown--link" onClick={onLinkClick}>
@@ -18,7 +14,13 @@ const Dropdown = ({ dropdownVisible, onLinkClick }) => {
         <a href="#provider" className="dropdown--link" onClick={onLinkClick}>
           Provider
         </a>
-        <a href="#" className="dropdown--link" onClick={onLinkClick}>
+        <a
+          href="https://816rehabandperformance.janeapp.com/#/staff_member/1/bio"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="dropdown--link"
+          onClick={onLinkClick}
+        >
           Book A Call
         </a>
       </section>

@@ -18,27 +18,32 @@ function App() {
   };
 
   const handleLinkClick = (e) => {
-    e.preventDefault();
+    const href = e.target.getAttribute("href");
 
-    setShrinkMain(false);
+    // Check if the href is an internal link
+    if (href && href.startsWith("#")) {
+      e.preventDefault();
 
-    setTimeout(() => {
-      const targetId = e.target.getAttribute("href").substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - 50; // Adjust 50px higher
+      setShrinkMain(false);
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    }, 100);
+      setTimeout(() => {
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.scrollY - 50; // Adjust 50px higher
 
-    setTimeout(() => {
-      setDropdownVisible(false); // Close the dropdown
-    }, 300);
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+
+      setTimeout(() => {
+        setDropdownVisible(false); // Close the dropdown
+      }, 300);
+    }
   };
 
   return (

@@ -1,4 +1,9 @@
-Ready to merge this
+Next Steps
+---------------
+- Responsive design
+  - find the limits
+
+---------------
 
 Hackity way of handling a dropdown...
 Research best practice.

@@ -44,9 +44,32 @@
   }
 }
 
+// @media screen and (max-height: 397px) {
+//   .hero-container {
+//     img {
+//       max-width: 100px; /* 1000px / 16px base font size */
+//       display: none;
+//     }
+
+//     button.call-to-action {
+//       position: relative;
+//       top: 0rem;
+//     }
+//   }
+// }
+
 @media (min-width: 482px) and (max-height: 900px) {
   .hero-container {
     height: 100vh;
+  }
+}
+
+@media screen and (max-height: 489px) {
+  .hero-container {
+    button.call-to-action {
+      position: relative;
+      top: -5rem;
+    }
   }
 }
 

@@ -13,6 +13,7 @@
 
   img {
     width: 100%;
+    max-width: 627px; /* 1000px / 16px base font size */
   }
 
   .call-to-action {
@@ -39,6 +40,78 @@
   @media (hover: hover) {
     .call-to-action:hover {
       background-color: #50816b;
+    }
+  }
+}
+
+// Media Queries
+
+@media screen and (max-height: 395px) {
+  .hero-container {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
+
+    // align-items: center;
+
+    // .container {
+    //   width: 300px;
+    // }
+  }
+}
+
+@media screen and (max-height: 489px) {
+  .hero-container {
+    button.call-to-action {
+      position: relative;
+      top: -6rem;
+    }
+  }
+}
+
+@media screen and (max-height: 725px) {
+  .hero-container {
+    img {
+      max-width: 400px; /* 1000px / 16px base font size */
+    }
+  }
+}
+
+@media (min-width: 482px) and (max-height: 900px) {
+  .hero-container {
+    height: 100vh;
+  }
+}
+
+@media (max-height: 393px) {
+  .hero-container {
+    img {
+      max-width: 200px; /* 1000px / 16px base font size */
+    }
+
+    button.call-to-action {
+      position: relative;
+      top: -2rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-height: 229px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+
+    .container {
+      width: 300px;
+    }
+    button.call-to-action {
+      position: relative;
+      top: 0;
     }
   }
 }

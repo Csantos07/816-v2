@@ -9,6 +9,7 @@
 
   & img {
     width: 30vw;
+    max-width: 5rem; /* 80px / 16px base font size */
   }
 
   &.dropdown-visible {

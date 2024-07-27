@@ -26,3 +26,11 @@
     top: 0;
   }
 }
+
+@media screen and (max-height: 546px) {
+  .dropdown {
+    a {
+      padding: 0rem;
+    }
+  }
+}

@@ -48,24 +48,21 @@
 
 @media screen and (max-height: 395px) {
   .hero-container {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-around;
-
-    // align-items: center;
-
-    // .container {
-    //   width: 300px;
-    // }
   }
 }
 
-@media screen and (max-height: 489px) {
+@media screen and (max-height: 479px) {
   .hero-container {
     button.call-to-action {
       position: relative;
       top: -6rem;
     }
+  }
+}
+
+@media screen and (max-height: 621px) {
+  .hero-container {
+    height: 100vh;
   }
 }
 

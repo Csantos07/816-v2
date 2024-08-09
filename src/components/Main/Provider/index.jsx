@@ -26,7 +26,7 @@ const Provider = () => {
 
           <a
             className="social-media-link"
-            href="mailto:someone@example.com"
+            href="mailto:mike@816rehabandperformance.com"
             target="_blank"
             rel="noopener noreferrer"
           >

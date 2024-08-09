@@ -48,6 +48,103 @@
 
 // Media Queries
 
+@media screen and (min-height: 1200px) {
+  .hero-container {
+    img {
+      width: 100vw;
+      // max-width: 751px;
+      position: relative;
+      top: -5rem;
+    }
+    button.call-to-action {
+      position: relative;
+      top: -10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero-container {
+    img {
+      width: 80vw;
+    }
+  }
+}
+@media screen and (min-width: 750px) {
+  .hero-container {
+    img {
+      width: 75vw;
+    }
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .hero-container {
+    img {
+      width: 75vw;
+    }
+    button.call-to-action {
+      position: relative;
+      top: -10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .hero-container {
+    img {
+      position: relative;
+      top: -5rem;
+      width: 75vw;
+    }
+    button.call-to-action {
+      position: relative;
+      top: -14rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    img {
+      position: relative;
+      top: -10rem;
+      width: 75vw;
+    }
+    button.call-to-action {
+      position: relative;
+      top: -24rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero-container {
+    img {
+      position: relative;
+      top: -14rem;
+      width: 75vw;
+    }
+    button.call-to-action {
+      position: relative;
+      top: -28rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .hero-container {
+    img {
+      position: relative;
+      top: -19rem;
+      width: 75vw;
+    }
+    button.call-to-action {
+      position: relative;
+      top: -35rem;
+    }
+  }
+}
 @media screen and (max-height: 395px) {
   .hero-container {
   }
@@ -111,36 +208,6 @@
     button.call-to-action {
       position: relative;
       top: 0;
-    }
-  }
-}
-
-@media screen and (min-height: 1200px) {
-  .hero-container {
-    img {
-      width: 100vw;
-      // max-width: 751px;
-      position: relative;
-      top: -5rem;
-    }
-    button.call-to-action {
-      position: relative;
-      top: -10rem;
-    }
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .hero-container {
-    img {
-      width: 80vw;
-    }
-  }
-}
-@media screen and (min-width: 750px) {
-  .hero-container {
-    img {
-      width: 75vw;
     }
   }
 }

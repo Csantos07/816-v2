@@ -8,7 +8,31 @@ const Provider = () => {
       <div className="provider-left-container">
         <h1 className="mobile">Your Provider</h1>
 
-        <img src="/mobile-provider-image.png" alt="Dr. Michael Santos" />
+        <img
+          className="provider-image"
+          src="/mobile-provider-image.svg"
+          alt="Dr. Michael Santos"
+        />
+
+        <div className="socials">
+          <a
+            className="social-media-link"
+            href="https://www.instagram.com/drmikesantos/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/instagram.svg" alt="Instagram" />
+          </a>
+
+          <a
+            className="social-media-link"
+            href="mailto:mike@816rehabandperformance.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/mail.svg" alt="Instagram" />
+          </a>
+        </div>
       </div>
 
       <div className="provider-right-container">

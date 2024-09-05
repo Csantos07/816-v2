@@ -48,18 +48,58 @@
 
 // Media Queries
 
-@media screen and (min-height: 1200px) {
+@media (max-height: 900px) {
+  .hero-container {
+    height: 100vh;
+  }
+}
+
+@media (max-height: 700px) {
+  .hero-container {
+    height: 120vh;
+  }
+}
+
+@media (max-height: 600px) {
+  .hero-container {
+    height: 150vh;
+  }
+}
+
+@media (min-width: 433px) and (max-height: 445px) {
   .hero-container {
     img {
-      width: 100vw;
-      // max-width: 751px;
-      position: relative;
-      top: -5rem;
+      max-width: 700px;
     }
-    button.call-to-action {
-      position: relative;
-      top: -10rem;
-    }
+  }
+}
+@media (max-height: 366px) {
+  .hero-container {
+    height: 180vh;
+  }
+}
+
+@media (max-height: 366px) {
+  .hero-container {
+    height: 200vh;
+  }
+}
+
+@media (min-width: 433px) and (max-height: 366px) {
+  .hero-container {
+    height: 300vh;
+  }
+}
+
+@media (min-width: 433px) and (max-height: 200px) {
+  .hero-container {
+    height: 400vh;
+  }
+}
+
+@media (min-width: 433px) and (max-height: 150px) {
+  .hero-container {
+    height: 600vh;
   }
 }
 
@@ -90,124 +130,106 @@
   }
 }
 
-@media screen and (min-width: 830px) {
-  .hero-container {
-    img {
-      position: relative;
-      top: -5rem;
-      width: 75vw;
-    }
-    button.call-to-action {
-      position: relative;
-      top: -14rem;
-    }
-  }
-}
+// @media screen and (min-width: 830px) {
+//   .hero-container {
+//     img {
+//       position: relative;
+//       top: -5rem;
+//       width: 75vw;
+//     }
+//     button.call-to-action {
+//       position: relative;
+//       top: -14rem;
+//     }
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .hero-container {
+    height: 80vh;
     img {
       position: relative;
       top: -10rem;
-      width: 75vw;
+      max-width: 55.3125rem;
     }
     button.call-to-action {
       position: relative;
-      top: -24rem;
+      top: -20rem;
     }
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) and (max-height: 800px) {
   .hero-container {
+    height: 120vh;
     img {
       position: relative;
-      top: -14rem;
-      width: 75vw;
+      top: -12rem;
+      max-width: 50.3125rem;
     }
     button.call-to-action {
       position: relative;
-      top: -28rem;
+      top: -26rem;
     }
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1000px) and (max-height: 700px) {
   .hero-container {
+    height: 150vh;
     img {
       position: relative;
-      top: -19rem;
-      width: 75vw;
+      top: -12rem;
+      max-width: 50.3125rem;
     }
     button.call-to-action {
       position: relative;
-      top: -35rem;
-    }
-  }
-}
-@media screen and (max-height: 395px) {
-  .hero-container {
-  }
-}
-
-@media screen and (max-height: 479px) {
-  .hero-container {
-    button.call-to-action {
-      position: relative;
-      top: -6rem;
+      top: -26rem;
     }
   }
 }
 
-@media screen and (max-height: 621px) {
+@media screen and (min-width: 1000px) and (max-height: 400px) {
   .hero-container {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-height: 725px) {
-  .hero-container {
+    height: 180vh;
     img {
-      // max-width: 400px; /* 1000px / 16px base font size */
+      position: relative;
+      top: -5rem;
+      max-width: 45.3125rem;
+    }
+    button.call-to-action {
+      position: relative;
+      top: -16rem;
     }
   }
 }
 
-@media (min-width: 482px) and (max-height: 900px) {
+@media screen and (min-width: 1000px) and (max-height: 320px) {
   .hero-container {
-    height: 100vh;
-  }
-}
-
-@media (max-height: 393px) {
-  .hero-container {
+    height: 250vh;
     img {
-      // max-width: 200px; /* 1000px / 16px base font size */
+      position: relative;
+      top: -5rem;
+      max-width: 45.3125rem;
     }
-
     button.call-to-action {
       position: relative;
-      top: -2rem;
-      padding: 0.5rem;
-      font-size: 1rem;
+      top: -16rem;
     }
   }
 }
 
-@media screen and (max-height: 229px) {
+@media screen and (min-width: 1000px) and (max-height: 320px) {
   .hero-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    align-items: center;
-
-    .container {
-      width: 300px;
+    height: 400vh;
+    img {
+      position: relative;
+      top: -5rem;
+      max-width: 45.3125rem;
     }
     button.call-to-action {
       position: relative;
-      top: 0;
+      top: -16rem;
     }
   }
 }

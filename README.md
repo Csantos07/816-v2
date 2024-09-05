@@ -1,14 +1,15 @@
 ## Next Steps
-- Responsive design
-  - find the limits
-  
-- Need to move the button up on mobile
-- Responsive provider page
+- Best practice for responsiveness?
+- animations ... lets make it look more modern
+
+- New wireframes... testimonials
 
 ---
 
 ## Finished
 
+- Basic responsive design.. is it best practice?
+- Google analytics
 - Responsiveness for header and footer logo
 - More Responsive splash logo
 
